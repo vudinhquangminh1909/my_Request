@@ -1,0 +1,356 @@
+<div class="card">
+
+    <div class="card-header">
+        <div class="header-row">
+            <div class="col col-md-6">
+                <h5 class="card-title department-title">
+                    {{ 'My Request' | abpLocalization}}
+                </h5>
+            </div>
+            <div class="col col-md-6 text-end">
+                <button id="create" class="btn btn-primary" type="button" (click)="addNewRequest()">
+                    <i class="fa fa-plus me-1"></i>
+                    <span>{{ "::New Request" | abpLocalization }}</span>
+                </button>
+            </div>
+        </div>
+        <!-- <form class="search-form">
+            <div class="search-row">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Request No">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Title">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="From Date">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="To Date">
+                </div>
+                <div class="col-md-2">
+                    <select class="form-select">
+                        <option value="">Status</option>
+                        <option value="1">Open</option>
+                        <option value="2">Closed</option>
+                    </select>
+                </div>
+            </div>
+        </form> -->
+        <div class="button-row text-end">
+            <button class="btn btn-secondary">Clear</button>
+            <button class="btn btn-primary">Refresh</button>
+        </div>
+    </div>
+    <div class="card-body">
+        <ngx-datatable [rows]="get_All_Data" default>
+            <ngx-datatable-column [name]="'::Actions' | abpLocalization" [maxWidth]="150" [sortable]="false">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div ngbDropdown container="body" class="d-inline-block">
+                        <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" ngbDropdownToggle>
+                            <i class="fa fa-cog me-1"></i>{{ '::Actions' | abpLocalization }}
+                        </button>
+                        <div ngbDropdownMenu>
+                            <button id="edit" ngbDropdownItem (click)="edit(row.id)">
+                                {{ '::Edit' | abpLocalization }}
+                            </button>
+
+                            <button ngbDropdownItem (click)="delete(row.id)">
+                                {{ '::Delete' | abpLocalization }}
+                            </button>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Status' | abpLocalization" [maxWidth]="150" [sortable]="true">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div ngbDropdown container="body" class="d-inline-block">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" ngbDropdownToggle [ngClass]="getStatusClass(row.status)">
+                            {{ row.status }}
+                        </button>
+                        <div ngbDropdownMenu>
+                            <button id="inApproval" ngbDropdownItem (click)="updateStatus(row.id, 'In Approval')">
+                                In Approval
+                            </button>
+                            <button id="notApproval" ngbDropdownItem (click)="updateStatus(row.id, 'Not Approval')">
+                                Not Approval
+                            </button>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column [name]="'ID'" prop="id" [sortable]="false" [width]="100">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div (click)="showDetails(row.id)" style="cursor: pointer;">{{ row.id }}</div>
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column [name]="'::Requester Name' | abpLocalization" prop="requester_Name">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.requester_Name}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Email' | abpLocalization" prop="email">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.email}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Legal Entity' | abpLocalization" prop="legal_Entity_Id">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{ row.legal_Entity_Id }}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Department' | abpLocalization" prop="department_Id">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.department_Id}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Request No' | abpLocalization" prop="request_No">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.request_No}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Verify Person' | abpLocalization" prop="verify_Person_Id">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.verify_Person_Id}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Kind Of FAL' | abpLocalization" prop="kind_Of_Fal_Id">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.kind_Of_Fal_Id}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Short Description' | abpLocalization" prop="short_description">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.short_description}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Supplier Name' | abpLocalization" prop="suppier_name_Id">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.suppier_name_Id}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Vendor Account' | abpLocalization" prop="vendor_account">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.vendor_account}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Payment Methods' | abpLocalization" prop="payment_Mettods_Id">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.payment_Mettods_Id}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Beneficiary Name' | abpLocalization" prop="beneficiary_name">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.beneficiary_name}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Beneficiary Account' | abpLocalization" prop="beneficiary_account">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="right-align">{{row.beneficiary_account}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Beneficiary Bank Name' | abpLocalization" prop="beneficiary_bank_name">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="left-align">{{row.beneficiary_bank_name}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Total Pretax Amount' | abpLocalization" prop="total_pre_tax_amount">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="right-align">{{row.total_pre_tax_amount}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Total Tax Amount' | abpLocalization" prop="total_tax_amount">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="right-align">{{row.total_tax_amount}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Total Amount' | abpLocalization" prop="total_amount">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div class="right-align">{{row.total_amount}}</div>
+                </ng-template>
+            </ngx-datatable-column>
+        </ngx-datatable>
+        <!-- <table mat-table [dataSource]="get_All_Data">
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef>
+                  <button mat-icon-button aria-label="Actions">
+                    <mat-icon>settings</mat-icon>
+                  </button>
+                </th>
+                <td mat-cell *matCellDef="let row">
+                  <div ngbDropdown container="body" class="d-inline-block">
+                    <button mat-icon-button [matMenuTriggerFor]="actionsMenu">
+                      <mat-icon>build</mat-icon>
+                    </button>
+                    <mat-menu #actionsMenu="matMenu">
+                      <button mat-menu-item (click)="edit(row.id)">
+                        {{ 'Edit' | abpLocalization }}
+                      </button>
+                      <button mat-menu-item (click)="delete(row.id)">
+                        {{ 'Delete' | abpLocalization }}
+                      </button>
+                    </mat-menu>
+                  </div>
+                </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Status' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let row">
+                  <div ngbDropdown container="body" class="d-inline-block">
+                    <button mat-icon-button [matMenuTriggerFor]="statusMenu" [ngClass]="getStatusClass(row.status)">
+                      {{ row.status }}
+                    </button>
+                    <mat-menu #statusMenu="matMenu">
+                      <button mat-menu-item (click)="updateStatus(row.id, 'In Approval')">
+                        In Approval
+                      </button>
+                      <button mat-menu-item (click)="updateStatus(row.id, 'Not Approval')">
+                        Not Approval
+                      </button>
+                    </mat-menu>
+                  </div>
+                </td>
+              </ng-container>
+          
+             
+              <ng-container matColumnDef="requester_Name">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Requester Name' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let row"> {{ row.requester_Name }} </td>
+              </ng-container>
+          
+             
+              <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Email' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let row"> {{ row.email }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="legal_Entity_Id">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Legal Entity' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.legal_Entity_Id}} </td>
+              </ng-container>
+          
+             
+              <ng-container matColumnDef="department_Id">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Department' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.department_Id}} </td>
+              </ng-container>
+          
+            
+              <ng-container matColumnDef="request_No">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Request No' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.request_No}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="verify_Person_Id">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Verify Person' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.verify_Person_Id}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="kind_Of_Fal_Id">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Kind Of FAL' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.kind_Of_Fal_Id}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="short_description">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Short Description' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.short_description}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="suppier_name_Id">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Supplier Name' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.suppier_name_Id}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="vendor_account">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Vendor Account' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.vendor_account}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="payment_Mettods_Id">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Payment Methods' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.payment_Mettods_Id}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="beneficiary_name">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Beneficiary Name' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.beneficiary_name}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="beneficiary_account">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Beneficiary Account' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.beneficiary_account}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="beneficiary_bank_name">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Beneficiary Bank Name' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.beneficiary_bank_name}} </td>
+              </ng-container>
+          
+             
+              <ng-container matColumnDef="total_pre_tax_amount">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Total Pretax Amount' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.total_pre_tax_amount}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="total_tax_amount">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Total Tax Amount' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.total_tax_amount}} </td>
+              </ng-container>
+          
+              
+              <ng-container matColumnDef="total_amount">
+                <th mat-header-cell *matHeaderCellDef> {{ '::Total Amount' | abpLocalization }} </th>
+                <td mat-cell *matCellDef="let element"> {{element.total_amount}} </td>
+              </ng-container>
+          
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of My Requests">
+        </mat-paginator> -->
+    </div>
+</div>
+
+<abp-modal [(visible)]="isModalOpen">
+    <ng-template #abpHeader>
+        <h3>{{ 'View Department' | abpLocalization }} {{ selectedDepartmentId }}</h3>
+    </ng-template>
+    <ng-template #abpBody>
+        <form [formGroup]="form_view_id" [attr.disabled]="isFormDisabled ? true : null">
+            <div class="mt-2">
+                <label>requester_Name</label><span class="red"> * </span>
+                <input [attr.disabled]="isFormDisabled ? true : null" type="text" class="form-control"
+                    formControlName="requester_Name" />
+            </div>
+            <div class="mt-2">
+                <label>email</label><span class="red"> * </span>
+                <input [attr.disabled]="isFormDisabled ? true : null" type="text" class="form-control"
+                    formControlName="email" />
+            </div>
+            <div class="mt-2">
+                <label>request_No</label><span class="red"> * </span>
+                <input [attr.disabled]="isFormDisabled ? true : null" type="text" class="form-control"
+                    formControlName="request_No" />
+            </div>
+        </form>
+    </ng-template>
+    <ng-template #abpFooter>
+        <button type="button" class="btn btn-secondary" abpClose>
+            {{ '::Close' | abpLocalization }}
+        </button>
+    </ng-template>
+</abp-modal>

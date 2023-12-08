@@ -1,0 +1,157 @@
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    /* Các ô input sẽ căn đều với khoảng cách đều nhau */
+    width: 100%;
+    /* Đảm bảo rằng hộp chứa các ô input chiếm toàn bộ chiều rộng của màn hình */
+}
+
+.input-container input {
+    flex: 1;
+    /* Tất cả ô input sẽ có chiều rộng bằng nhau và căn đều */
+    padding: 5px;
+    /* Điều chỉnh lề và padding theo nhu cầu */
+    
+}
+
+.blue-background {
+    background-color: #3498db;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.center-text {
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.margin_top {
+    margin-top: 1rem;
+}
+
+.white-input {
+    background-color: #ffffff;
+    /* Màu nền trắng */
+}
+
+.font_size {
+    font-size: 1.3rem;
+}
+
+.larger-checkbox {
+    transform: scale(1.5);
+    /* Điều chỉnh kích thước của checkbox lên 1.5 lần */
+}
+
+.margin_left {
+    margin-left: 0.5rem;
+}
+
+.margin_top_input {
+    margin-top: 3rem !important;
+}
+
+.margin_left_input {
+    margin-left: -16rem !important;
+    ;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.upload_icon {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+}
+
+.margin_left_right {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+
+.margin_botoom {
+    margin-bottom: 2rem;
+}
+
+.padding {
+    padding: 1rem;
+    padding-right: 5px;
+}
+
+.margin_flex {
+    margin-top: 1rem;
+}
+
+.font_size_icon {
+    font-size: 1.5rem;
+}
+
+.margin_left_btn_add {
+    margin-left: -33.6rem;
+}
+
+.margin_botoom_icon_edit {
+    margin-bottom: 1rem;
+}
+
+.margin_icon_detele {
+    margin-right: 1rem;
+}
+
+.margin_botoom_top {
+    margin: 1rem 0;
+}
+
+// tạo class gắn vào div của html để sửa
+
+// này cho icon (toàn bộ)
+.form-icon{
+    width: 24px ;
+    margin-right: 0.313rem;
+}
+
+//này dãn dòng xuống
+.edit-icon{ 
+    margin-bottom: 0.888rem;
+}
+
+//cái này căn lại cái form
+.request-form{
+    margin: 0;
+    padding: 20px 20px;
+    margin-right: 5px; 
+}
+
+//cái này chỉnh lại cái nút
+.input-spacing{
+    margin-right: 3.438rem;
+}
+
+.addtripbutton {
+    margin-top: 20px;      // Adds space above the button
+    margin-bottom: 20px;   // Adds space below the button
+    width: auto;           // Allows the button to take the necessary width
+    padding: 8px 16px;     // Adjust padding for a smaller button
+    margin-left: 10px;
+    
+  }
+
+  .background_chill {
+    width: 95%;    // Set the width to 100% or adjust as needed
+    
+    background-color: lightcyan;
+    margin-bottom: 20px;
+  
+  }
+
+  @import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+  
+  

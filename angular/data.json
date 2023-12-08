@@ -1,0 +1,1350 @@
+{
+  "Legal_Entity": [
+    {
+      "id": 1,
+      "code": "Code Legal Entity 1",
+      "description": "Description Legal Entity 1",
+      "importBy": "Import By Legal Entity 1"
+    },
+    {
+      "id": 2,
+      "code": "Code Legal Entity 2",
+      "description": "Description Legal Entity 2",
+      "importBy": "Import By Legal Entity 2"
+    },
+    {
+      "id": 3,
+      "code": "Code Legal Entity 3",
+      "description": "Description Legal Entity 3",
+      "importBy": "Import By Legal Entity 3"
+    },
+    {
+      "id": 4,
+      "code": "Code Legal Entity 4",
+      "description": "Description Legal Entity 4",
+      "importBy": "Import By Legal Entity 4"
+    },
+    {
+      "id": 5,
+      "code": "Code Legal Entity 5",
+      "description": "Description Legal Entity 5",
+      "importBy": "Import By Legal Entity 5"
+    },
+    {
+      "id": 6,
+      "code": "Code Legal Entity 6",
+      "description": "Description Legal Entity 6",
+      "importBy": "Import By Legal Entity 6"
+    },
+    {
+      "id": 7,
+      "code": "Code Legal Entity 7",
+      "description": "Description Legal Entity 7",
+      "importBy": "Import By Legal Entity 7"
+    },
+    {
+      "id": 8,
+      "code": "Code Legal Entity 8",
+      "description": "Description Legal Entity 8",
+      "importBy": "Import By Legal Entity 8"
+    },
+    {
+      "id": 9,
+      "code": "Code Legal Entity 9",
+      "description": "Description Legal Entity 9",
+      "importBy": "Import By Legal Entity 9"
+    },
+    {
+      "id": 10,
+      "code": "Code Legal Entity 10",
+      "description": "Description Legal Entity 10",
+      "importBy": "Import By Legal Entity 10"
+    },
+    {
+      "id": 11,
+      "code": "Code Legal Entity 11",
+      "description": "Description Legal Entity 11",
+      "importBy": "Import By Legal Entity 11"
+    },
+    {
+      "id": 12,
+      "code": "Code Legal Entity 12",
+      "description": "Description Legal Entity 12",
+      "importBy": "Import By Legal Entity 12"
+    },
+    {
+      "id": 13,
+      "code": "Code Legal Entity 13",
+      "description": "Description Legal Entity 13",
+      "importBy": "Import By Legal Entity 13"
+    },
+    {
+      "id": 14,
+      "code": "Code Legal Entity 14",
+      "description": "Description Legal Entity 14",
+      "importBy": "Import By Legal Entity 14"
+    },
+    {
+      "id": 15,
+      "code": "Code Legal Entity 15",
+      "description": "Description Legal Entity 15",
+      "importBy": "Import By Legal Entity 15"
+    },
+    {
+      "id": 16,
+      "code": "Code Legal Entity 16",
+      "description": "Description Legal Entity 16",
+      "importBy": "Import By Legal Entity 16"
+    },
+    {
+      "id": 17,
+      "code": "Code Legal Entity 17",
+      "description": "Description Legal Entity 17",
+      "importBy": "Import By Legal Entity 17"
+    },
+    {
+      "id": 18,
+      "code": "Code Legal Entity 18",
+      "description": "Description Legal Entity 18",
+      "importBy": "Import By Legal Entity 18"
+    },
+    {
+      "id": 19,
+      "code": "Code Legal Entity 19",
+      "description": "Description Legal Entity 19",
+      "importBy": "Import By Legal Entity 19"
+    },
+    {
+      "id": 20,
+      "code": "Code Legal Entity 20",
+      "description": "Description Legal Entity 20",
+      "importBy": "Import By Legal Entity 20"
+    }
+  ],
+  "Department": [
+    {
+      "id": 1,
+      "code": "Code Department 1",
+      "description": "Description Department 1",
+      "importBy": "Import By Department 1"
+    },
+    {
+      "id": 2,
+      "code": "Code Department 2",
+      "description": "Description Department 2",
+      "importBy": "Import By Department 2"
+    },
+    {
+      "id": 3,
+      "code": "Code Department 3",
+      "description": "Description Department 3",
+      "importBy": "Import By Department 3"
+    },
+    {
+      "id": 4,
+      "code": "Code Department 4",
+      "description": "Description Department 4",
+      "importBy": "Import By Department 4"
+    },
+    {
+      "id": 5,
+      "code": "Code Department 5",
+      "description": "Description Department 5",
+      "importBy": "Import By Department 5"
+    },
+    {
+      "id": 6,
+      "code": "Code Department 6",
+      "description": "Description Department 6",
+      "importBy": "Import By Department 6"
+    },
+    {
+      "id": 7,
+      "code": "Code Department 7",
+      "description": "Description Department 7",
+      "importBy": "Import By Department 7"
+    },
+    {
+      "id": 8,
+      "code": "Code Department 8",
+      "description": "Description Department 8",
+      "importBy": "Import By Department 8"
+    },
+    {
+      "id": 9,
+      "code": "Code Department 9",
+      "description": "Description Department 9",
+      "importBy": "Import By Department 9"
+    },
+    {
+      "id": 10,
+      "code": "Code Department 10",
+      "description": "Description Department 10",
+      "importBy": "Import By Department 10"
+    },
+    {
+      "id": 11,
+      "code": "Code Department 11",
+      "description": "Description Department 11",
+      "importBy": "Import By Department 11"
+    },
+    {
+      "id": 12,
+      "code": "Code Department 12",
+      "description": "Description Department 12",
+      "importBy": "Import By Department 12"
+    },
+    {
+      "id": 13,
+      "code": "Code Department 13",
+      "description": "Description Department 13",
+      "importBy": "Import By Department 13"
+    },
+    {
+      "id": 14,
+      "code": "Code Department 14",
+      "description": "Description Department 14",
+      "importBy": "Import By Department 14"
+    },
+    {
+      "id": 15,
+      "code": "Code Department 15",
+      "description": "Description Department 15",
+      "importBy": "Import By Department 15"
+    },
+    {
+      "id": 16,
+      "code": "Code Department 16",
+      "description": "Description Department 16",
+      "importBy": "Import By Department 16"
+    },
+    {
+      "id": 17,
+      "code": "Code Department 17",
+      "description": "Description Department 17",
+      "importBy": "Import By Department 17"
+    },
+    {
+      "id": 18,
+      "code": "Code Department 18",
+      "description": "Description Department 18",
+      "importBy": "Import By Department 18"
+    },
+    {
+      "id": 19,
+      "code": "Code Department 19",
+      "description": "Description Department 19",
+      "importBy": "Import By Department 19"
+    },
+    {
+      "id": 20,
+      "code": "Code Department 20",
+      "description": "Description Department 20",
+      "importBy": "Import By Department 20"
+    }
+  ],
+  "Kind_of_fal": [
+    {
+      "id": 1,
+      "code": "Code Kind_of_fal 1",
+      "description": "Description Kind_of_fal1",
+      "importBy": "Import By Kind_of_fal 1"
+    },
+    {
+      "id": 2,
+      "code": "Code Kind_of_fal 2",
+      "description": "Description Kind_of_fal 2",
+      "importBy": "Import By Kind_of_fal 2"
+    },
+    {
+      "id": 3,
+      "code": "Code Kind_of_fal 3",
+      "description": "Description Kind_of_fal 3",
+      "importBy": "Import By Kind_of_fal 3"
+    },
+    {
+      "id": 4,
+      "code": "Code Kind_of_fal 4",
+      "description": "Description Kind_of_fal 4",
+      "importBy": "Import By Kind_of_fal 4"
+    },
+    {
+      "id": 5,
+      "code": "Code Kind_of_fal 5",
+      "description": "Description Kind_of_fal 5",
+      "importBy": "Import By Kind_of_fal 5"
+    },
+    {
+      "id": 6,
+      "code": "Code Kind_of_fal 6",
+      "description": "Description Kind_of_fal 6",
+      "importBy": "Import By Kind_of_fal 6"
+    },
+    {
+      "id": 7,
+      "code": "Code Kind_of_fal 7",
+      "description": "Description Kind_of_fal 7",
+      "importBy": "Import By Kind_of_fal 7"
+    },
+    {
+      "id": 8,
+      "code": "Code Kind_of_fal 8",
+      "description": "Description Kind_of_fal 8",
+      "importBy": "Import By Kind_of_fal 8"
+    },
+    {
+      "id": 9,
+      "code": "Code Kind_of_fal 9",
+      "description": "Description Kind_of_fal 9",
+      "importBy": "Import By Kind_of_fal 9"
+    },
+    {
+      "id": 10,
+      "code": "Code Kind_of_fal 10",
+      "description": "Description Kind_of_fal 10",
+      "importBy": "Import By Kind_of_fal 10"
+    },
+    {
+      "id": 11,
+      "code": "Code Kind_of_fal 11",
+      "description": "Description Kind_of_fal 11",
+      "importBy": "Import By Kind_of_fal 11"
+    },
+    {
+      "id": 12,
+      "code": "Code Kind_of_fal 12",
+      "description": "Description Kind_of_fal 12",
+      "importBy": "Import By Kind_of_fal 12"
+    },
+    {
+      "id": 13,
+      "code": "Code Kind_of_fal 13",
+      "description": "Description Kind_of_fal 13",
+      "importBy": "Import By Kind_of_fal 13"
+    },
+    {
+      "id": 14,
+      "code": "Code Kind_of_fal 14",
+      "description": "Description Kind_of_fal 14",
+      "importBy": "Import By Kind_of_fal 14"
+    },
+    {
+      "id": 15,
+      "code": "Code Kind_of_fal 15",
+      "description": "Description Kind_of_fal 15",
+      "importBy": "Import By Kind_of_fal 15"
+    },
+    {
+      "id": 16,
+      "code": "Code Kind_of_fal 16",
+      "description": "Description Kind_of_fal 16",
+      "importBy": "Import By Kind_of_fal 16"
+    },
+    {
+      "id": 17,
+      "code": "Code Kind_of_fal 17",
+      "description": "Description Kind_of_fal 17",
+      "importBy": "Import By Kind_of_fal 17"
+    },
+    {
+      "id": 18,
+      "code": "Code Kind_of_fal 18",
+      "description": "Description Kind_of_fal 18",
+      "importBy": "Import By Kind_of_fal 18"
+    },
+    {
+      "id": 19,
+      "code": "Code Kind_of_fal 19",
+      "description": "Description Kind_of_fal 19",
+      "importBy": "Import By Kind_of_fal 19"
+    },
+    {
+      "id": 20,
+      "code": "Code Kind_of_fal 20",
+      "description": "Description Kind_of_fal 20",
+      "importBy": "Import By Kind_of_fal 20"
+    }
+  ],
+  "expence_code": [
+    {
+      "id": 1,
+      "code": "Code expence_code 1",
+      "description": "Description expence_code 1",
+      "importBy": "Import By expence_code 1"
+    },
+    {
+      "id": 2,
+      "code": "Code expence_code 2",
+      "description": "Description expence_code 2",
+      "importBy": "Import By expence_code 2"
+    },
+    {
+      "id": 3,
+      "code": "Code expence_code 3",
+      "description": "Description expence_code 3",
+      "importBy": "Import By expence_code 3"
+    },
+    {
+      "id": 4,
+      "code": "Code expence_code 4",
+      "description": "Description expence_code 4",
+      "importBy": "Import By expence_code 4"
+    },
+    {
+      "id": 5,
+      "code": "Code expence_code 5",
+      "description": "Description expence_code 5",
+      "importBy": "Import By expence_code 5"
+    },
+    {
+      "id": 6,
+      "code": "Code expence_code 6",
+      "description": "Description expence_code 6",
+      "importBy": "Import By expence_code 6"
+    },
+    {
+      "id": 7,
+      "code": "Code expence_code 7",
+      "description": "Description expence_code 7",
+      "importBy": "Import By expence_code 7"
+    },
+    {
+      "id": 8,
+      "code": "Code expence_code 8",
+      "description": "Description expence_code 8",
+      "importBy": "Import By expence_code 8"
+    },
+    {
+      "id": 9,
+      "code": "Code expence_code 9",
+      "description": "Description expence_code 9",
+      "importBy": "Import By expence_code 9"
+    },
+    {
+      "id": 10,
+      "code": "Code expence_code 10",
+      "description": "Description expence_code 10",
+      "importBy": "Import Byexpence_codel 10"
+    },
+    {
+      "id": 11,
+      "code": "Code expence_code 11",
+      "description": "Description expence_code 11",
+      "importBy": "Import By expence_code 11"
+    },
+    {
+      "id": 12,
+      "code": "Code expence_code 12",
+      "description": "Description expence_code 12",
+      "importBy": "Import By expence_code 12"
+    },
+    {
+      "id": 13,
+      "code": "Code expence_code 13",
+      "description": "Description expence_code 13",
+      "importBy": "Import By expence_code 13"
+    },
+    {
+      "id": 14,
+      "code": "Code expence_code 14",
+      "description": "Description expence_code 14",
+      "importBy": "Import By expence_code 14"
+    },
+    {
+      "id": 15,
+      "code": "Code expence_code 15",
+      "description": "Description expence_code 15",
+      "importBy": "Import By expence_code 15"
+    },
+    {
+      "id": 16,
+      "code": "Code expence_code 16",
+      "description": "Description expence_code 16",
+      "importBy": "Import By expence_code 16"
+    },
+    {
+      "id": 17,
+      "code": "Code expence_code 17",
+      "description": "Description expence_code 17",
+      "importBy": "Import By expence_code 17"
+    },
+    {
+      "id": 18,
+      "code": "Code expence_code 18",
+      "description": "Description expence_code 18",
+      "importBy": "Import By expence_code 18"
+    },
+    {
+      "id": 19,
+      "code": "Code expence_code 19",
+      "description": "Description expence_code 19",
+      "importBy": "Import By expence_code 19"
+    },
+    {
+      "id": 20,
+      "code": "Code expence_code 20",
+      "description": "Description expence_code 20",
+      "importBy": "Import By expence_code 20"
+    }
+  ],
+  "Currencies": [
+    {
+      "id": 1,
+      "code": "USD",
+      "title": "US Dollar",
+      "exchangeRate": 1,
+      "modifiedBy": "Admin"
+    },
+    {
+      "id": 2,
+      "code": "EUR",
+      "title": "Euro",
+      "exchangeRate": 0.85,
+      "modifiedBy": "Admin"
+    },
+    {
+      "id": 3,
+      "code": "GBP",
+      "title": "British Pound",
+      "exchangeRate": 0.75,
+      "modifiedBy": "Admin"
+    },
+    {
+      "id": 4,
+      "code": "JPY",
+      "title": "Japanese Yen",
+      "exchangeRate": 110,
+      "modifiedBy": "Admin"
+    },
+    {
+      "id": 5,
+      "code": "AUD",
+      "title": "Australian Dollar",
+      "exchangeRate": 1.35,
+      "modifiedBy": "Admin"
+    }
+  ],
+  "VAT": [
+    {
+      "id": 1,
+      "code": "VAT001",
+      "title": "VAT Standard",
+      "description": "Standard VAT Rate",
+      "rate": 0.1
+    },
+    {
+      "id": 2,
+      "code": "VAT002",
+      "title": "VAT Standard 2",
+      "description": "Standard VAT Rat 2",
+      "rate": 0.2
+    },
+    {
+      "id": 3,
+      "code": "VAT003",
+      "title": "VAT Standard 3",
+      "description": "Standard VAT Rat 3",
+      "rate": 0.3
+    },
+    {
+      "id": 4,
+      "code": "VAT004",
+      "title": "VAT Standard 4",
+      "description": "Standard VAT Rat 4",
+      "rate": 0.4
+    }
+  ],
+  "supplier": [
+    {
+      "id": 1,
+      "code": "Code supplier 1",
+      "description": "Description supplier 1",
+      "importBy": "Import By supplier 1"
+    },
+    {
+      "id": 2,
+      "code": "Code supplier 2",
+      "description": "Description supplier 2",
+      "importBy": "Import By supplier 2"
+    },
+    {
+      "id": 3,
+      "code": "Code supplier 3",
+      "description": "Description supplier 3",
+      "importBy": "Import By supplier 3"
+    },
+    {
+      "id": 4,
+      "code": "Code supplier 4",
+      "description": "Description supplier 4",
+      "importBy": "Import By supplier 4"
+    },
+    {
+      "id": 5,
+      "code": "Code supplier 5",
+      "description": "Description supplier 5",
+      "importBy": "Import By supplier 5"
+    },
+    {
+      "id": 6,
+      "code": "Code supplier 6",
+      "description": "Description supplier 6",
+      "importBy": "Import By supplier 6"
+    },
+    {
+      "id": 7,
+      "code": "Code supplier 7",
+      "description": "Description supplier 7",
+      "importBy": "Import By supplier 7"
+    },
+    {
+      "id": 8,
+      "code": "Code supplier 8",
+      "description": "Description supplier 8",
+      "importBy": "Import By supplier 8"
+    },
+    {
+      "id": 9,
+      "code": "Code supplier 9",
+      "description": "Description supplier 9",
+      "importBy": "Import By supplier 9"
+    },
+    {
+      "id": 10,
+      "code": "Code supplier 10",
+      "description": "Description supplier 10",
+      "importBy": "Import By supplier 10"
+    },
+    {
+      "id": 11,
+      "code": "Code supplier 11",
+      "description": "Description supplier 11",
+      "importBy": "Import By supplier 11"
+    },
+    {
+      "id": 12,
+      "code": "Code supplier 12",
+      "description": "Description supplier 12",
+      "importBy": "Import By supplier 12"
+    },
+    {
+      "id": 13,
+      "code": "Code supplier 13",
+      "description": "Description supplier 13",
+      "importBy": "Import By supplier 13"
+    },
+    {
+      "id": 14,
+      "code": "Code supplier 14",
+      "description": "Description supplier 14",
+      "importBy": "Import By supplier 14"
+    },
+    {
+      "id": 15,
+      "code": "Code supplier 15",
+      "description": "Description supplier 15",
+      "importBy": "Import By supplier 15"
+    },
+    {
+      "id": 16,
+      "code": "Code supplier 16",
+      "description": "Description supplier 16",
+      "importBy": "Import By supplier 16"
+    },
+    {
+      "id": 17,
+      "code": "Code supplier 17",
+      "description": "Description supplier 17",
+      "importBy": "Import By supplier 17"
+    },
+    {
+      "id": 18,
+      "code": "Code supplier 18",
+      "description": "Description supplier 18",
+      "importBy": "Import By supplier 18"
+    },
+    {
+      "id": 19,
+      "code": "Code supplier 19",
+      "description": "Description supplier 19",
+      "importBy": "Import By supplier 19"
+    },
+    {
+      "id": 20,
+      "code": "Code supplier 20",
+      "description": "Description supplier 20",
+      "importBy": "Import By supplier 20"
+    }
+  ],
+  "My_request": [
+    {
+      "id": 1,
+      "requester_Name": "John Doe",
+      "email": "john.doe@example.com",
+      "legal_Entity_Id": 123,
+      "department_Id": 456,
+      "request_No": "REQ001",
+      "verify_Person_Id": 789,
+      "kind_Of_Fal_Id": 101,
+      "short_description": "Sample description",
+      "suppier_name_Id": 202,
+      "vendor_account": "VENDOR123",
+      "payment_Mettods_Id": 303,
+      "beneficiary_name": "Beneficiary Name",
+      "beneficiary_account": "Beneficiary Account",
+      "beneficiary_bank_name": "Beneficiary Bank",
+      "total_pre_tax_amount": 1000,
+      "total_tax_amount": 200,
+      "total_amount": 1200,
+      "Status": "InApproval",
+      "tripExpenses": [
+        {
+          "description": "Expense 1",
+          "department_Id": 456,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": 500,
+          "currency_id": 1,
+          "exchange_rate": 1.2,
+          "vat": 50,
+          "total_Amount": 550,
+          "getTripItems": [
+            {
+              "attach_files": "file1.pdf"
+            },
+            {
+              "attach_files": "file2.pdf"
+            }
+          ]
+        },
+        {
+          "description": "Expense 2",
+          "department_Id": 456,
+          "freelancer": false,
+          "pesonal_Refund": true,
+          "amount": 300,
+          "currency_id": 1,
+          "exchange_rate": 1.2,
+          "vat": 30,
+          "total_Amount": 330,
+          "getTripItems": [
+            {
+              "attach_files": "file3.pdf"
+            }
+          ]
+        }
+      ],
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "Test 03",
+      "email": "Test 03",
+      "legal_Entity_Id": 3,
+      "department_Id": 3,
+      "request_No": "Test 03",
+      "verify_Person_Id": 3,
+      "kind_Of_Fal_Id": 3,
+      "short_description": "Test 03",
+      "suppier_name_Id": 3,
+      "vendor_account": "Test 03",
+      "payment_Mettods_Id": 3,
+      "beneficiary_name": "Test 03",
+      "beneficiary_account": "Test 03",
+      "beneficiary_bank_name": "Test 03",
+      "total_pre_tax_amount": "Test 03",
+      "total_tax_amount": "Test 03",
+      "total_amount": "Test 03",
+      "tripExpenses": [
+        {
+          "Description": "",
+          "department": "",
+          "Freelancer": false,
+          "Pesonal_Refund": false,
+          "Amount": 0,
+          "Currency": "",
+          "Exchange_rate": 0,
+          "Vat": "",
+          "Total_Amount": 0,
+          "tripItems": [
+            {
+              "Attach_files": ""
+            },
+            {
+              "Attach_files": ""
+            },
+            {
+              "Attach_files": ""
+            }
+          ]
+        }
+      ],
+      "id": 4,
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "Test 04",
+      "email": "Test 04",
+      "legal_Entity_Id": 4,
+      "department_Id": 4,
+      "request_No": "Test 04",
+      "verify_Person_Id": 4,
+      "kind_Of_Fal_Id": 4,
+      "short_description": "Test 04",
+      "suppier_name_Id": 4,
+      "vendor_account": "Test 04",
+      "payment_Mettods_Id": 4,
+      "beneficiary_name": "Test 04",
+      "beneficiary_account": "Test 04",
+      "beneficiary_bank_name": "Test 04",
+      "total_pre_tax_amount": "Test 04",
+      "total_tax_amount": "Test 04",
+      "total_amount": "Test 04",
+      "Status": "InApproval",
+      "tripExpenses": [
+        {
+          "description": "Test 04",
+          "department_Id": 4,
+          "freelancer": false,
+          "pesonal_Refund": true,
+          "amount": "Test 04",
+          "currency_id": 4,
+          "exchange_rate": "Test 04",
+          "vat": 4,
+          "total_Amount": "Test 04",
+          "tripItems": []
+        }
+      ],
+      "id": 5,
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "Test 06",
+      "email": "Test 06",
+      "legal_Entity_Id": 6,
+      "department_Id": 6,
+      "request_No": "Test 06",
+      "verify_Person_Id": 6,
+      "kind_Of_Fal_Id": 6,
+      "short_description": "Test 06",
+      "suppier_name_Id": 6,
+      "vendor_account": "Test 06",
+      "payment_Mettods_Id": 6,
+      "beneficiary_name": "Test 06",
+      "beneficiary_account": "Test 06",
+      "beneficiary_bank_name": "Test 06",
+      "total_pre_tax_amount": "Test 06",
+      "total_tax_amount": "Test 06",
+      "total_amount": "Test 06",
+      "tripExpenses": [
+        {
+          "description": "Test 06",
+          "department_Id": 6,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "Test 06",
+          "currency_id": 6,
+          "exchange_rate": "Test 06",
+          "vat": 4,
+          "total_Amount": "Test 06",
+          "tripItems": [
+            {
+              "attach_files": "C:\\fakepath\\Bao-cao-thuc-tap-HuynhThanhTam.pdf"
+            },
+            {
+              "attach_files": "C:\\fakepath\\Tiếng Anh 11 Friends Global - Bài Kiểm Tra Nâng Cao - Key.xlsx"
+            }
+          ]
+        },
+        {
+          "description": "Test 06",
+          "department_Id": 6,
+          "freelancer": true,
+          "pesonal_Refund": true,
+          "amount": "Test 06",
+          "currency_id": 6,
+          "exchange_rate": "Test 06",
+          "vat": 4,
+          "total_Amount": "Test 06",
+          "tripItems": []
+        }
+      ],
+      "id": 6,
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "th5h5",
+      "email": "45g45g",
+      "legal_Entity_Id": 3,
+      "department_Id": 3,
+      "request_No": "45g45g",
+      "verify_Person_Id": 19,
+      "kind_Of_Fal_Id": 18,
+      "short_description": "45g45g",
+      "suppier_name_Id": 18,
+      "vendor_account": "45g45",
+      "payment_Mettods_Id": 19,
+      "beneficiary_name": "45g45g",
+      "beneficiary_account": "45g45g",
+      "beneficiary_bank_name": "4g45g",
+      "total_pre_tax_amount": "4g45g45",
+      "total_tax_amount": "45g45g",
+      "total_amount": "45g45g",
+      "Status": "InApproval",
+      "tripExpenses": [
+        {
+          "description": "45g45g",
+          "department_Id": 16,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "045g45g45",
+          "currency_id": 18,
+          "exchange_rate": "045g45g",
+          "vat": 1,
+          "total_Amount": "04g45g54g",
+          "tripItems": [
+            {
+              "attach_files": "C:\\fakepath\\Mẫu_Biên bản tiếp nhận sinh viên OJT (Nộp đầu kỳ, chữ ký, mộc tròn đỏ).docx"
+            }
+          ]
+        },
+        {
+          "description": "ooooooooooooooooooooooooo",
+          "department_Id": 17,
+          "freelancer": false,
+          "pesonal_Refund": true,
+          "amount": "045g45g",
+          "currency_id": 18,
+          "exchange_rate": "04g54g",
+          "vat": 2,
+          "total_Amount": "04g54g4",
+          "tripItems": []
+        }
+      ],
+      "id": 8,
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "ttrete",
+      "email": "retret",
+      "legal_Entity_Id": 5,
+      "department_Id": 3,
+      "request_No": "ertret",
+      "verify_Person_Id": 7,
+      "kind_Of_Fal_Id": 7,
+      "short_description": "asdsadsa",
+      "suppier_name_Id": 15,
+      "vendor_account": "sadsad",
+      "payment_Mettods_Id": 17,
+      "beneficiary_name": "asdasd",
+      "beneficiary_account": "sadas",
+      "beneficiary_bank_name": "dsadasd",
+      "total_pre_tax_amount": "12312",
+      "total_tax_amount": "1231",
+      "total_amount": "23123",
+      "tripExpenses": [
+        {
+          "description": "123123",
+          "department_Id": 16,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "01231231",
+          "currency_id": 16,
+          "exchange_rate": "12312",
+          "vat": 2,
+          "total_Amount": "1231222",
+          "tripItems": [
+            {
+              "attach_files": "C:\\fakepath\\Mẫu_Báo cáo thực tập hàng tháng.docx"
+            }
+          ]
+        }
+      ],
+      "id": 9,
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "111111111111111111111111111",
+      "email": "111111111111111111111111111",
+      "legal_Entity_Id": 2,
+      "department_Id": 2,
+      "request_No": "111111111111111111111111111",
+      "verify_Person_Id": 4,
+      "kind_Of_Fal_Id": 4,
+      "short_description": "111111111111111111111111111",
+      "suppier_name_Id": 2,
+      "vendor_account": "111111111111111111111111111",
+      "payment_Mettods_Id": 1,
+      "beneficiary_name": "111111111111111111111111111",
+      "beneficiary_account": "111111111111111111111111111",
+      "beneficiary_bank_name": "111111111111111111111111111",
+      "total_pre_tax_amount": "111111111111111111111111111",
+      "total_tax_amount": "111111111111111111111111111",
+      "total_amount": "111111111111111111111111111",
+      "tripExpenses": [
+        {
+          "description": "1231231",
+          "department_Id": 16,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "0123123",
+          "currency_id": 19,
+          "exchange_rate": "0123123",
+          "vat": 1,
+          "total_Amount": "0123123",
+          "tripItems": []
+        },
+        {
+          "description": "123213123",
+          "department_Id": 14,
+          "freelancer": false,
+          "pesonal_Refund": true,
+          "amount": "0123123",
+          "currency_id": 18,
+          "exchange_rate": "0213213213",
+          "vat": 4,
+          "total_Amount": "0123213213",
+          "tripItems": []
+        },
+        {
+          "description": "1231232141",
+          "department_Id": 16,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "0123123",
+          "currency_id": 18,
+          "exchange_rate": "012312",
+          "vat": 4,
+          "total_Amount": "021321312",
+          "tripItems": []
+        },
+        {
+          "description": "12321321321",
+          "department_Id": 15,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "0123123",
+          "currency_id": 20,
+          "exchange_rate": "012321",
+          "vat": 3,
+          "total_Amount": "0123123",
+          "tripItems": []
+        },
+        {
+          "description": "2222222222222",
+          "department_Id": 18,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "022222222",
+          "currency_id": 19,
+          "exchange_rate": "022222",
+          "vat": 2,
+          "total_Amount": "0222222222222",
+          "tripItems": []
+        },
+        {
+          "description": "131231",
+          "department_Id": 15,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "0213123",
+          "currency_id": 20,
+          "exchange_rate": "0123213",
+          "vat": 1,
+          "total_Amount": "0123213",
+          "tripItems": []
+        }
+      ],
+      "id": 10,
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "2222222222222",
+      "email": "222222222222222",
+      "legal_Entity_Id": 3,
+      "department_Id": 4,
+      "request_No": "22222222222",
+      "verify_Person_Id": 5,
+      "kind_Of_Fal_Id": 3,
+      "short_description": "222222222222",
+      "suppier_name_Id": 16,
+      "vendor_account": "222222",
+      "payment_Mettods_Id": 17,
+      "beneficiary_name": "2",
+      "beneficiary_account": "2",
+      "beneficiary_bank_name": "2",
+      "total_pre_tax_amount": "2",
+      "total_tax_amount": "2",
+      "total_amount": "2",
+      "tripExpenses": [
+        {
+          "description": "2",
+          "department_Id": 17,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "02",
+          "currency_id": 17,
+          "exchange_rate": "02",
+          "vat": 2,
+          "total_Amount": "02",
+          "tripItems": [
+            {
+              "attach_files": "C:\\fakepath\\openvpn-connect-3.4.2.3160_signed (4).msi"
+            }
+          ]
+        },
+        {
+          "description": "123213213",
+          "department_Id": 16,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "0123213",
+          "currency_id": 19,
+          "exchange_rate": "012321321",
+          "vat": 4,
+          "total_Amount": "021321321321",
+          "tripItems": []
+        }
+      ],
+      "id": 11,
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "12",
+      "email": "3",
+      "legal_Entity_Id": 6,
+      "department_Id": 8,
+      "request_No": "123",
+      "verify_Person_Id": 3,
+      "kind_Of_Fal_Id": 4,
+      "short_description": "1",
+      "suppier_name_Id": 5,
+      "vendor_account": "1",
+      "payment_Mettods_Id": 3,
+      "beneficiary_name": "1",
+      "beneficiary_account": "1",
+      "beneficiary_bank_name": "1",
+      "total_pre_tax_amount": "1000$",
+      "total_tax_amount": "1000$",
+      "total_amount": "1232134",
+      "tripExpenses": [
+        {
+          "description": "123213",
+          "department_Id": 18,
+          "freelancer": false,
+          "pesonal_Refund": false,
+          "amount": "0123213",
+          "currency_id": "",
+          "exchange_rate": 0,
+          "vat": "",
+          "total_Amount": 0,
+          "tripItems": []
+        },
+        {
+          "description": "1231",
+          "department_Id": 18,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "02131",
+          "currency_id": 17,
+          "exchange_rate": "012312",
+          "vat": 2,
+          "total_Amount": "012312",
+          "tripItems": []
+        }
+      ],
+      "id": 12,
+      "status": "In Approval"
+    },
+    {
+      "requester_Name": "123213",
+      "email": "12",
+      "legal_Entity_Id": 4,
+      "department_Id": 3,
+      "request_No": "234455",
+      "verify_Person_Id": 18,
+      "kind_Of_Fal_Id": 17,
+      "short_description": "55555",
+      "suppier_name_Id": 2,
+      "vendor_account": "5555555",
+      "payment_Mettods_Id": 3,
+      "beneficiary_name": "5555555555",
+      "beneficiary_account": "5555555",
+      "beneficiary_bank_name": "5555555555",
+      "total_pre_tax_amount": "5555555",
+      "total_tax_amount": "55555555",
+      "total_amount": "55555555555555",
+      "Status": "InApproval",
+      "tripExpenses": [
+        {
+          "description": "55555555",
+          "department_Id": 18,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "05555",
+          "currency_id": 18,
+          "exchange_rate": "05",
+          "vat": 2,
+          "total_Amount": "05",
+          "tripItems": []
+        },
+        {
+          "description": "098098",
+          "department_Id": 13,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "190,0000",
+          "currency_id": 15,
+          "exchange_rate": "2,4000",
+          "vat": 1,
+          "total_Amount": "90,0000",
+          "tripItems": [
+            {
+              "attach_files": "C:\\fakepath\\Vũ-Hồng-Thịnh_GCS210908_Báo cáo thực tập tháng 10.docx"
+            }
+          ]
+        }
+      ],
+      "id": 13,
+      "status": "Not Approval"
+    },
+    {
+      "requester_Name": "Request 1",
+      "email": "toilathinh150503@gmail.com",
+      "legal_Entity_Id": 2,
+      "department_Id": 2,
+      "request_No": "PR- 2001929031",
+      "verify_Person_Id": 15,
+      "kind_Of_Fal_Id": 9,
+      "short_description": "descriptipm ",
+      "suppier_name_Id": 2,
+      "vendor_account": "12312312",
+      "payment_Mettods_Id": 3,
+      "beneficiary_name": "123123",
+      "beneficiary_account": "123123",
+      "beneficiary_bank_name": "123123",
+      "total_pre_tax_amount": "12,3123",
+      "total_tax_amount": "12,3123",
+      "total_amount": "12,3123",
+      "Status": "InApproval",
+      "tripExpenses": [
+        {
+          "description": "Trip 1",
+          "department_Id": 7,
+          "freelancer": false,
+          "pesonal_Refund": true,
+          "amount": "1,0000",
+          "currency_id": 14,
+          "exchange_rate": "10,9000",
+          "vat": 3,
+          "total_Amount": "1,0000",
+          "tripItems": [
+            {
+              "attach_files": "C:\\fakepath\\Vũ-Hồng-Thịnh_GCS210908_Báo cáo thực tập tháng 11.docx"
+            }
+          ]
+        },
+        {
+          "description": "popopo",
+          "department_Id": 19,
+          "freelancer": true,
+          "pesonal_Refund": false,
+          "amount": "0,0000",
+          "currency_id": 16,
+          "exchange_rate": "00,0000",
+          "vat": 1,
+          "total_Amount": "00,0000",
+          "tripItems": []
+        }
+      ],
+      "id": 14,
+      "status": "In Approval"
+    }
+  ],
+  "EInvoice": [
+    {
+      "id": 1,
+      "invoice_id": "string",
+      "company_id": "string",
+      "template_code": "string",
+      "invoice_name": "string",
+      "invoice_number": "string",
+      "invoice_series": "string",
+      "invoice_type": "string",
+      "ref_code": "string",
+      "gdt_code": "string",
+      "issued_date": "2023-11-30T02:55:37.059Z",
+      "approved_by": "string",
+      "approval_status": "string",
+      "buyer_address_line": "string",
+      "buyer_display_name": "string",
+      "buyer_email": "string",
+      "buyer_legal_name": "string",
+      "buyer_tax_code": "string",
+      "discount_amount": 0,
+      "payment_method_name": "string",
+      "note": "string",
+      "seller_address_line": "string",
+      "seller_legal_name": "string",
+      "seller_tax_code": "string",
+      "seller_bank_account": "string",
+      "seller_bank_name": "string",
+      "total_amount_with_vat": 0,
+      "total_amount_without_vat": 0,
+      "total_amount_with_vat_in_words": "string",
+      "total_vat_amount": 0,
+      "vat_percentage": 0,
+      "email_id": "string",
+      "vat_rate": 0,
+      "is_voided": true,
+      "currency": "string",
+      "exchange_rate": 0,
+      "payment_status": "string",
+      "tax_breakdowns": [
+        {
+          "vat_rate": 0,
+          "total_vat_amount": 0,
+          "total_amount_with_vat": 0,
+          "total_amount_without_vat": 0
+        }
+      ],
+      "po_numbers": [
+        "string"
+      ],
+      "invoice_items": [
+        {
+          "invoice_item_id": "string",
+          "line_number": "string",
+          "item_name": "string",
+          "unit": "string",
+          "unit_price": 0,
+          "quantity": 0,
+          "vat_percentage": 0,
+          "vat_amount": 0,
+          "total_price_before_vat": 0,
+          "total_price_after_vat": 0,
+          "discount_percentage": 0,
+          "discount_amount": 0,
+          "vat_type": "string",
+          "is_free": true,
+          "is_discount": true
+        }
+      ],
+      "attachments": [
+        {
+          "name": "string",
+          "url": "string",
+          "type": "string"
+        }
+      ],
+      "validations": {
+        "status": "string",
+        "results": [
+          {
+            "status": "string",
+            "key": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

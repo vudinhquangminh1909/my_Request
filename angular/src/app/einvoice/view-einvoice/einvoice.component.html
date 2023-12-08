@@ -1,0 +1,68 @@
+<div class="card">
+    <div class="card-header">
+        <div class="header-row">
+            <div class="col col-md-6">
+                <h5 class="card-title department-title">
+                    {{ 'Invoices' | abpLocalization}}
+                </h5>
+            </div>
+            
+        </div>
+    </div>
+    <div class="card-body">
+        <ngx-datatable [rows]="allEInvoices" default>
+            <ngx-datatable-column [name]="'::Actions' | abpLocalization" [maxWidth]="150" [sortable]="false">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div ngbDropdown container="body" class="d-inline-block">
+                        <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" ngbDropdownToggle>
+                            <i class="fa fa-cog me-1"></i>{{ '::Actions' | abpLocalization }}
+                        </button>
+                        <div ngbDropdownMenu>
+                            <button id="edit" ngbDropdownItem (click)="edit(row.id)">
+                                {{ '::Edit' | abpLocalization }}
+                            </button>
+
+                            <button ngbDropdownItem (click)="delete(row.id)">
+                                {{ '::Delete' | abpLocalization }}
+                            </button>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Template Code + Invoice Series'" [prop]="['template_code', 'invoice_series']">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                  <div class="left-align">{{ row.template_code }} - {{ row.invoice_series }}</div>
+                </ng-template>
+              </ngx-datatable-column>
+            
+              <!-- 2nd column: issued_date -->
+              <ngx-datatable-column [name]="'::Issued Date'" prop="issued_date">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                  <div class="left-align">{{ row.issued_date | date }}</div>
+                </ng-template>
+              </ngx-datatable-column>
+            
+              <!-- 3rd column: invoice_number -->
+              <ngx-datatable-column [name]="'::Invoice Number'" prop="invoice_number">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                  <div class="left-align">{{ row.invoice_number }}</div>
+                </ng-template>
+              </ngx-datatable-column>
+            
+              <!-- 4th column: invoice_name -->
+              <ngx-datatable-column [name]="'::Invoice Name'" prop="invoice_name">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                  <div class="left-align">{{ row.invoice_name }}</div>
+                </ng-template>
+              </ngx-datatable-column>
+            
+              <!-- 5th column: approval_status -->
+              <ngx-datatable-column [name]="'::Approval Status'" prop="approval_status">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                  <div class="left-align">{{ row.approval_status }}</div>
+                </ng-template>
+              </ngx-datatable-column>
+        </ngx-datatable>
+    </div>
+</div>

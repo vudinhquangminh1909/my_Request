@@ -1,0 +1,181 @@
+<!-- <div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col col-md-6">
+                <h5 class="card-title">
+                    {{ 'View Legal Entity' | abpLocalization }}
+                </h5>
+                <div class="d-flex">
+                    <button class="btn btn-outline-success" (click)="create_Legal_Entity()" type="submit">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <ngx-datatable [rows]="get_All_data" default>
+            <ngx-datatable-column [name]="'::Actions' | abpLocalization" [maxWidth]="150" [sortable]="false">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div ngbDropdown container="body" class="d-inline-block">
+                        <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" ngbDropdownToggle>
+                            <i class="fa fa-cog me-1"></i>{{ '::Actions' | abpLocalization }}
+                        </button>
+                        <div ngbDropdownMenu>
+                            <button id="edit" ngbDropdownItem (click)="edit_Legal_Entity(row.id)">
+                                {{ '::Edit' | abpLocalization }}
+                            </button>
+
+                            <button ngbDropdownItem (click)="delete_Legal_Entity(row.id)">
+                                {{ '::Delete' | abpLocalization }}
+                            </button>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column [name]="'::Id' | abpLocalization" prop="id"></ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Code' | abpLocalization" prop="code"></ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Description' | abpLocalization" prop="description"></ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Import By' | abpLocalization" prop="importBy"></ngx-datatable-column>
+        </ngx-datatable>
+    </div>
+</div>
+
+
+<abp-modal [(visible)]="isModalOpen">
+    <ng-template #abpHeader>
+        <h3> {{'::New Legal Entity' | abpLocalization}} </h3>
+    </ng-template>
+
+    <ng-template #abpBody>
+        <form [formGroup]="form" (ngSubmit)="save()">
+            <div class="mt-2">
+                <label>Code</label><span> * </span>
+                <input type="text" class="form-control" formControlName="code" />
+            </div>
+
+            <div class="mt-2">
+                <label>Description</label><span> * </span>
+                <input type="text" class="form-control" formControlName="description" />
+            </div>
+
+            <div class="mt-2">
+                <label>Import by</label><span> * </span>
+                <input type="email" class="form-control" formControlName="importBy" />
+            </div>
+        </form>
+    </ng-template>
+
+    <ng-template #abpFooter>
+        <button type="button" class="btn btn-secondary" abpClose>
+            {{ '::Close' | abpLocalization }}
+        </button>
+
+        <button class="btn btn-primary" (click)="save()" [disabled]="form.invalid">
+            <i class="fa fa-check mr-1"></i>
+            {{ '::Save' | abpLocalization }}
+        </button>
+    </ng-template>
+</abp-modal>
+
+
+
+<abp-modal [(visible)]="isEditOpen">
+    <ng-template #abpHeader>
+        <h3>{{ '::Edit Legal Entity' | abpLocalization }}</h3>
+    </ng-template>
+    <ng-template #abpBody>
+        <form [formGroup]="form" (ngSubmit)="SaveEdit()">
+
+            <div class="mt-2">
+                <label for="SystemCategorys-code">Code</label><span> * </span>
+                <input type="text" id="SystemCategorys-code" class="form-control" formControlName="code" />
+            </div>
+
+            <div class="mt-2">
+                <label for="SystemCategorys-description">Description</label><span> * </span>
+                <input type="text" id="SystemCategorys-description" class="form-control"
+                    formControlName="description" />
+            </div>
+
+            <div class="mt-2">
+                <label for="SystemCategorys-importBy">Import by</label><span> * </span>
+                <input type="email" id="SystemCategorys-importBy" class="form-control" formControlName="importBy" />
+            </div>
+        </form>
+    </ng-template>
+    <ng-template #abpFooter>
+        <button type="button" class="btn btn-secondary" abpClose>
+            {{ '::Close' | abpLocalization }}
+        </button>
+
+        <button class="btn btn-primary" (click)="SaveEdit()" [disabled]="form.invalid">
+            <i class="fa fa-check mr-1"></i>
+            {{ '::Save' | abpLocalization }}
+        </button>
+    </ng-template>
+</abp-modal> -->
+
+
+<div class="invoice-form">
+    <h1>HÓA ĐƠN GIÁ TRỊ GIA TĂNG</h1>
+    <div class="form-section">
+        <label for="signedDate">Ngày:</label>
+        <input type="date" id="signedDate" name="signedDate">
+        <label for="templateCode">Gái (Mẫu số + Ký hiệu):</label>
+        <input type="text" id="templateCode" name="templateCode">
+    </div>
+    <div class="form-section">
+        <label for="sellerTaxCode">Mã Số Thuế:</label>
+        <input type="text" id="sellerTaxCode" name="sellerTaxCode">
+        <label for="sellerAddress">Đơn Vị Bán Hàng:</label>
+        <input type="text" id="sellerAddress" name="sellerAddress">
+    </div>
+    <div class="form-section">
+        <label for="buyerName">Tên Đơn Vị:</label>
+        <input type="text" id="buyerName" name="buyerName">
+        <!-- Add other buyer fields here -->
+    </div>
+    <!-- Add the table for invoice details here -->
+    <table class="invoice-table">
+        <!-- Table headers -->
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên hàng hóa, dịch vụ</th>
+                <th>ĐVT</th>
+                <th>SL</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <!-- Table rows -->
+        <tbody>
+            <!-- Example row: -->
+            <tr>
+                <td>1</td>
+                <td>Product A</td>
+                <td>pcs</td>
+                <td>10</td>
+                <td>100</td>
+                <td>1000</td>
+            </tr>
+            <!-- Repeat for other rows -->
+        </tbody>
+    </table>
+    <!-- Add the total amount field here -->
+    <div class="total-amount">
+        <label for="totalAmount">Tổng cộng:</label>
+        <input type="text" id="totalAmount" name="totalAmount">
+    </div>
+    <!-- Add the signature and date fields here -->
+    <div class="signature">
+        <label for="signature">Chữ ký:</label>
+        <input type="text" id="signature" name="signature">
+    </div>
+    <div class="date">
+        <label for="date">Ngày:</label>
+        <input type="date" id="date" name="date">
+    </div>
+</div>

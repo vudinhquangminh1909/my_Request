@@ -1,0 +1,118 @@
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col col-md-6">
+                <h5 class="card-title">
+                    {{ 'View Legal Entity' | abpLocalization }}
+                </h5>
+                <div class="d-flex" role="search">
+                    <button class="btn btn-outline-success" (click)="create_Kind_of_fal()" type="submit">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <ngx-datatable [rows]="get_All_data" default>
+
+            <ngx-datatable-column [name]="'::Actions' | abpLocalization" [maxWidth]="150" [sortable]="false">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <div ngbDropdown container="body" class="d-inline-block">
+                        <button class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" ngbDropdownToggle>
+                            <i class="fa fa-cog me-1"></i>{{ '::Actions' | abpLocalization }}
+                        </button>
+                        <div ngbDropdownMenu>
+                            <button id="edit" ngbDropdownItem (click)="edit_Kind_of_fal(row.id)">
+                                {{ '::Edit' | abpLocalization }}
+                            </button>
+
+                            <button ngbDropdownItem (click)="delete_Kind_of_fal(row.id)">
+                                {{ '::Delete' | abpLocalization }}
+                            </button>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngx-datatable-column>
+
+            <ngx-datatable-column [name]="'::Id' | abpLocalization" prop="id"></ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Code' | abpLocalization" prop="code"></ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Description' | abpLocalization" prop="description"></ngx-datatable-column>
+            <ngx-datatable-column [name]="'::Import By' | abpLocalization" prop="importBy"></ngx-datatable-column>
+        </ngx-datatable>
+    </div>
+</div>
+
+
+<abp-modal [(visible)]="isModalOpen">
+    <ng-template #abpHeader>
+        <h3> {{'::New Legal Entity' | abpLocalization}} </h3>
+    </ng-template>
+
+    <ng-template #abpBody>
+        <form [formGroup]="form" (ngSubmit)="save()">
+            <div class="mt-2">
+                <label>Code</label><span> * </span>
+                <input type="text" class="form-control" formControlName="code" />
+            </div>
+
+            <div class="mt-2">
+                <label>Description</label><span> * </span>
+                <input type="text" class="form-control" formControlName="description" />
+            </div>
+
+            <div class="mt-2">
+                <label>Import by</label><span> * </span>
+                <input type="email" class="form-control" formControlName="importBy" />
+            </div>
+        </form>
+    </ng-template>
+
+    <ng-template #abpFooter>
+        <button type="button" class="btn btn-secondary" abpClose>
+            {{ '::Close' | abpLocalization }}
+        </button>
+
+        <button class="btn btn-primary" (click)="save()" [disabled]="form.invalid">
+            <i class="fa fa-check mr-1"></i>
+            {{ '::Save' | abpLocalization }}
+        </button>
+    </ng-template>
+</abp-modal>
+
+
+
+<abp-modal [(visible)]="isEditOpen">
+    <ng-template #abpHeader>
+        <h3>{{ '::Edit Legal Entity' | abpLocalization }}</h3>
+    </ng-template>
+    <ng-template #abpBody>
+        <form [formGroup]="form" (ngSubmit)="SaveEdit()">
+
+            <div class="mt-2">
+                <label for="SystemCategorys-code">Code</label><span> * </span>
+                <input type="text" id="SystemCategorys-code" class="form-control" formControlName="code" />
+            </div>
+
+            <div class="mt-2">
+                <label for="SystemCategorys-description">Description</label><span> * </span>
+                <input type="text" id="SystemCategorys-description" class="form-control"
+                    formControlName="description" />
+            </div>
+
+            <div class="mt-2">
+                <label for="SystemCategorys-importBy">Import by</label><span> * </span>
+                <input type="email" id="SystemCategorys-importBy" class="form-control" formControlName="importBy" />
+            </div>
+        </form>
+    </ng-template>
+    <ng-template #abpFooter>
+        <button type="button" class="btn btn-secondary" abpClose>
+            {{ '::Close' | abpLocalization }}
+        </button>
+
+        <button class="btn btn-primary" (click)="SaveEdit()" [disabled]="form.invalid">
+            <i class="fa fa-check mr-1"></i>
+            {{ '::Save' | abpLocalization }}
+        </button>
+    </ng-template>
+</abp-modal>

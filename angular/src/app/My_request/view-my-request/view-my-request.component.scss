@@ -1,0 +1,123 @@
+.header-row {
+    background-color: #555555;
+    /* Set the desired grey color */
+    padding: 10px;
+    /* Add padding as needed */
+    margin-bottom: 20px;
+    /* Add margin as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.header-row h5 {
+    color: #ffffff;
+    /* Set the text color to white */
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.header-row .btn {
+    background-color: #ffffff;
+    /* Set the button background color to white */
+    color: #555555;
+    /* Set the button text color to dark grey */
+
+    border-color: #ffffff;
+    /* Set the button border color to white */
+    border-radius: 0;
+    /* Remove the button border radius */
+    padding: 0.5rem 1rem;
+
+}
+
+.search-row {
+    background-color: white;
+    /* Set the desired grey color */
+    padding: 10px;
+    /* Add padding as needed */
+    margin-bottom: 20px;
+    /* Add margin as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .col-md-3 {
+        margin-right: 10px;
+        max-width: 100%;
+    }
+
+    .col-md-2 {
+        margin-right: 10px;
+        max-width: 100%;
+    }
+
+
+
+
+}
+
+.search-row h5 {
+    color: #ffffff;
+    /* Set the text color to white */
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.search-row .btn {
+    background-color: #ffffff;
+    /* Set the button background color to white */
+    color: #555555;
+    /* Set the button text color to dark grey */
+
+    border-color: #ffffff;
+    /* Set the button border color to white */
+    border-radius: 0;
+    /* Remove the button border radius */
+    padding: 0.5rem 1rem;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.button-row button {
+    border: none;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border-radius: 0;
+    margin-right: 10px;
+}
+
+.in-approval {
+    background-color: green;
+    color: white;
+}
+
+.not-approval {
+    background-color: red;
+    color: white;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+
+.custom-snackbar {
+    background-color: green; /* Set your desired background color */
+    color: white; /* Set your desired text color */
+  }
+  
+  .error-snackbar {
+    background-color: red;
+    color: white;
+  }

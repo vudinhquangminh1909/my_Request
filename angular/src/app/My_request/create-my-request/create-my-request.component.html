@@ -1,0 +1,294 @@
+<div class="card">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <h3><b>NEW REQUEST</b></h3>
+            <div class="d-flex">
+                <button class="btn btn-primary me-2" (click)="saveData()">Submit</button>
+                <button class="btn btn-dark me-2" (click)="back()" type="submit">Back</button>
+            </div>
+        </div>
+    </nav>
+    <div class="app m-2" style="margin: 0rem 1rem;">
+
+        <form [formGroup]="parentForm" class="row needs-validation">
+
+            <div class="blue-background">
+                <h4 class="center-text">Requester Information</h4>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 mt-2">
+                    <label for="Requester_Name" class="form-label"><b>Requester Name</b></label>
+                    <input class="form-control white-input" formControlName="requester_Name" type="text">
+                </div>
+
+                <div class="col-md-3 mt-2">
+                    <label for="Email" class="form-label"><b>Email</b></label>
+                    <input type="text" class="form-control white-input" formControlName="email">
+                </div>
+
+                <div class="col-md-3 mt-2">
+                    <label for="" class="form-label"><b>Legal Entity</b></label> <span class="ms-1 text-danger">*</span>
+                    <select class="form-control" formControlName="legal_Entity_Id"
+                        asp-for="interface_category_ExpenseCode" class="form-select white auto-complete-select"
+                        data-autocomplete-value-property="id" aria-label="Default select example">
+                        <option *ngFor="let get_LegalEntity of get_data_Legal_Entity" [ngValue]="get_LegalEntity.id">
+                            {{get_LegalEntity.code}} - {{get_LegalEntity.description}}
+                        </option>
+                    </select>
+                </div>
+
+                <div class="col-md-3 mt-2">
+                    <label for="department" class="form-label"><b>Department</b></label> <span
+                        class="ms-1 text-danger">*</span>
+                    <select class="form-control" formControlName="department_Id"
+                        asp-for="interface_category_ExpenseCode" class="form-select white auto-complete-select"
+                        data-autocomplete-value-property="id" aria-label="Default select example">
+                        <option *ngFor="let get_department of get_data_department" [ngValue]="get_department.id">
+                            {{get_department.code}} - {{get_department.description}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="blue-background margin_top">
+                <h4 class="center-text">Requester Information</h4>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Request_No" class="form-label"><b>Request No</b></label>
+                <input class="form-control white-input" formControlName="request_No" type="text">
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="" class="form-label"><b>Verify Person</b></label> <span class="ms-1 text-danger">*</span>
+                <select class="form-control" formControlName="verify_Person_Id" asp-for="interface_category_ExpenseCode"
+                    class="form-select white auto-complete-select" data-autocomplete-value-property="id"
+                    aria-label="Default select example">
+                    <option *ngFor="let get_Verify_Person of get_data_department" [ngValue]="get_Verify_Person.id">
+                        {{get_Verify_Person.code}}
+                    </option>
+                </select>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="" class="form-label "><b>Kind of FAL</b></label> <span class="ms-1 text-danger">*</span>
+                <select class="form-control" formControlName="kind_Of_Fal_Id" class="form-select white"
+                    aria-label="Default select example">
+                    <option *ngFor="let get_Kind_of_FAL of get_data_Kind_of_fal" [ngValue]="get_Kind_of_FAL.id">
+                        {{get_Kind_of_FAL.code}} - {{get_Kind_of_FAL.description}}
+                    </option>
+                </select>
+            </div>
+
+            <div class="mb-3 mt-2">
+                <label for="" class="form-label"><b>Short description</b> <i>(Max 999 charachers)</i></label>
+                <textarea st class="form-control white white-input" formControlName="short_description" id=""
+                    rows="1"></textarea>
+            </div>
+
+            <div class="blue-background margin_top">
+                <h4 class="center-text">Supplier Information</h4>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Suppier_name" class="form-label"><b>Suppier name</b></label> <span
+                    class="ms-1 text-danger">*</span>
+                <select class="form-control" formControlName="suppier_name_Id" class="form-select white"
+                    aria-label="Default select example">
+                    <option *ngFor="let get_Suppier_name of get_data_supplier" [ngValue]="get_Suppier_name.id">
+                        {{get_Suppier_name.code}} - {{get_Suppier_name.description}}
+                    </option>
+                </select>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Vendor_account" class="form-label"><b>Vendor account</b></label>
+                <input class="form-control white-input" formControlName="vendor_account" type="text">
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Payment_Mettods" class="form-label"><b>Payment Mettods</b></label> <span
+                    class="ms-1 text-danger">*</span>
+                <select class="form-control" formControlName="payment_Mettods_Id" class="form-select white"
+                    aria-label="Default select example">
+                    <option *ngFor="let get_Payment_Mettods of get_data_department" [ngValue]="get_Payment_Mettods.id">
+                        {{get_Payment_Mettods.code}}
+                    </option>
+                </select>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Beneficiary_name" class="form-label"><b>Beneficiary name</b></label>
+                <input class="form-control white-input" formControlName="beneficiary_name" type="text">
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Beneficiary_account" class="form-label"><b>Beneficiary account</b></label>
+                <input class="form-control white-input" formControlName="beneficiary_account" type="text">
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Beneficiary_bank_name" class="form-label"><b>Beneficiary bank name</b></label>
+                <input class="form-control white-input" formControlName="beneficiary_bank_name" type="text">
+            </div>
+
+            <div class="blue-background margin_top">
+                <h4 class="center-text">Request Detail</h4>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Total_pre_tax_amount" class="form-label"><b>Total Pre-tax Amount</b></label>
+                <input class="form-control white-input" formControlName="total_pre_tax_amount" type="text"
+                    appFormatNumber>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Total_tax_amount" class="form-label"><b>Total Tax Amount</b></label>
+                <input class="form-control white-input" formControlName="total_tax_amount" type="text" appFormatNumber>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <label for="Total_amount" class="form-label"><b>Total Amount</b></label>
+                <input class="form-control white-input" formControlName="total_amount" type="text" appFormatNumber>
+            </div>
+
+            <button class="addtripbutton" (click)="addTripExpense()" mat-raised-button color="primary" type="submit">Add new trip</button>
+
+
+            <div formArrayName="tripExpenses">
+                <ng-container *ngFor="let tripExpense of tripExpenses.controls; let i = index">
+                    <div [formGroupName]="i" class="form-con" >
+
+                        <div class="d-flex">
+                            <div class="col-2 flex-shrink-3 margin_flex form-icon">
+
+                                <div class="icon edit-icon" (click)="toggleEditing(i)">
+                                    <i *ngIf="!isEditingList[i]" class="fa fa-pencil-square-o font_size_icon" aria-hidden="true"></i>
+                                    <i *ngIf="isEditingList[i]" class="fa fa-floppy-o font_size_icon margin_bottom_top" aria-hidden="true"></i>
+                                  </div>
+
+
+                                <div (click)="removetripExpense(i)" >
+                                    <i class=" fa fa-trash cursor blue font_size_icon" aria-hidden="true"></i>
+                                </div>
+                            </div> 
+
+                            <div  class=" col-10 form-con background_chill margin_right margin_top padding request-form ">
+
+                                <div class=" mt-2">
+                                    <label for="" class="form-label"><b>Description</b> <i>(Max 999
+                                            charachers)</i></label>
+                                    <textarea st class="form-control white white-input" formControlName="description"
+                                        id="" rows="1"></textarea>
+                                </div>
+
+                                <div class="row" style="display: flex;">
+                                    <div class="col-md-4 mt-2">
+                                        <label for="" class="form-label "><b>Department</b></label> <span
+                                            class="ms-1 text-danger">*</span>
+                                        <select class="form-control" formControlName="department_Id"
+                                            class="form-select white" aria-label="Default select example">
+                                            <option *ngFor="let get_department of get_data_department"
+                                                [ngValue]="get_department.id">
+                                                {{get_department.description}}
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-4 mt-5 margin_top_input input-spacing">
+                                        <input class="larger-checkbox " type="checkbox" value=""
+                                            formControlName="freelancer">
+                                        <label for="Freelancer" class="form-label  margin_left">Freelancer</label>
+                                    </div>
+
+                                    <div class="col-md-4 mt-5 margin_top_input margin_left_input">
+                                        <input class="larger-checkbox margin_left" type="checkbox" value=""
+                                            formControlName="pesonal_Refund">
+                                        <label for="Pesonal/Refund"
+                                            class="form-label margin_left">Pesonal/Refund</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2 mt-2">
+                                        <label for="Amount" class="form-label"><b>Amount</b></label>
+                                        <input class="form-control white-input" formControlName="amount" type="text"
+                                            appFormatNumber>
+                                    </div>
+
+                                    <div class="col-md-2 mt-2">
+                                        <label for="Currency" class="form-label "><b>Currency</b></label> <span
+                                            class="ms-1 text-danger">*</span>
+                                        <select class="form-control" formControlName="currency_id"
+                                            class="form-select white" aria-label="Default select example">
+                                            <option *ngFor="let get_department of get_data_department"
+                                                [ngValue]="get_department.id">
+                                                {{get_department.description}}
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2 mt-2">
+                                        <label for="Exchange_rate" class="form-label"><b>Exchange rate</b></label>
+                                        <input class="form-control white-input" formControlName="exchange_rate"
+                                            type="text" appFormatNumber>
+                                    </div>
+
+                                    <div class="col-md-2 mt-2">
+                                        <label for="Vat" class="form-label "><b>VAT</b></label> <span
+                                            class="ms-1 text-danger">*</span>
+                                        <select class="form-control white-input" formControlName="vat"
+                                            class="form-select white" aria-label="Default select example">
+                                            <option *ngFor="let get_Vat of get_data_VAT" [ngValue]="get_Vat.id">
+                                                {{get_Vat.title}}
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2 mt-2">
+                                        <label for="Total_Amount" class="form-label"><b>Total Amount (VND)</b></label>
+                                        <input type="text" class="form-control white-input"
+                                            formControlName="total_Amount" appFormatNumber>
+                                    </div>
+
+                                    <div formArrayName="tripItems">
+                                        <ng-container *ngFor="let tripItem of getTripItems(tripExpense).controls; let j = index">
+                                            <div [formGroupName]="j" class="form-chau">
+                                                <div class="col-md-5 mt-2">
+                                                    <div class="display_flex">
+                                                        <div (click)="removeTripItem(i, j)" class="margin_icon_detele">
+                                                            <i class="fa fa-trash cursor blue font_size_icon"
+                                                                aria-hidden="true"></i>
+                                                        </div>
+                                                        <i class="bi bi-upload upload_icon"></i>
+                                                        <input type="file" class="form-control white-input"
+                                                            formControlName="attach_files"   >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </ng-container>
+            
+                                    </div>
+                                    <div class="bd-highlight  my-2" >
+                                        <button mat-raised-button color="primary"  (click)="addTripItem(tripExpense)" 
+                                             type="submit" [disabled]="!isEditingList[i] || !isEditingAddTripItem[i]" >Add new detail</button>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        
+                        
+
+                        
+                    </div>
+                </ng-container>
+            </div>
+        </form>
+
+    </div>
+</div>

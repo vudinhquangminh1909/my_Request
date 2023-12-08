@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-header text-center">
+      <h5>Value Added Invoice</h5>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="invoiceForm" >
+      <div class="row mb-2">
+        <div class="col-md-2"><strong>Sales Unit:</strong></div>
+        <input class="form-control white-input" formControlName="salesUnit" type="text"> 
+      </div>
+      <!-- Repeat similar structure for other rows -->
+      <!-- Example: -->
+      <div class="row mb-2">
+        <div class="col-md-2"><strong>Tax Code:</strong></div>
+        <input class="form-control white-input" formControlName="taxCode" type="text"> 
+      </div>
+      <!-- Continue for other rows -->
+      <div class="row mb-2">
+        <div class="col-md-2"><strong>Address</strong></div>
+        <input class="form-control white-input" formControlName="address" type="text"> 
+      </div>
+      <!-- Example of half-length container bar -->
+      
+  
+      <!-- Repeat similar structure for other half-length rows -->
+    </form>
+    </div>
+  </div>
